@@ -102,3 +102,14 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+
+uwsgi_params
+nginx.conf
+mysite_nginx.conf
+mysite_uwsgi.ini
+mysite.sock
+libattery.sock
+static/
+media/
