@@ -22,10 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['5.63.159.110', '127.0.0.1']
-
+try:
+    from .local_settings import *
+except ImportError:
+    pass
 
 # Application definition
 
