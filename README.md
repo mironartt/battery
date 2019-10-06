@@ -25,3 +25,14 @@ db :
 дальше тестить
 
 
+https://www.lithiumbatterypower.com/
+https://relionbattery.com/products/lithium/rb100 - близко к нашей теме
+https://www.solarpowerworldonline.com/2015/08/what-is-the-best-type-of-battery-for-solar-storage/ - информация по батареям
+https://www.dnkpower.com/lifepo4-battery/ - еще информация
+https://www.lithiumpowerinc.com/ph48-5-industrial-lithium-battery.html - информация
+https://flexsolsolutions.com/soluxio/advantages-lithium-batteries/ - информация
+https://lithiumbatterycompany.com/ - лендинг по теме
+https://www.victronenergy.com/batteries - информация
+http://www.ibt-power.com/About_IBT_Power.html - информация
+http://www.rollsbattery.com/ - по теме ландинга
+https://www.victronenergy.com/ - по теме лендинга и информация

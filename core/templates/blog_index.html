@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+    <div class="page-header header-filter" data-parallax="true" style="background-image: url({% static 'img/bg.jpg' %}); max-height: 450px">
+        <div class="container">
+            <div class="row">
+                <div style="position:relative; bottom: 150px">
+                    <div class="col  col-xs-12">
+                        <h1 class="title">Все новости и актуальная информация</h1>
+                    </div>
+                    <div class="col  col-xs-12">
+                        <h4>Every landing page needs a small description after the big bold title, that's why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+
+    <div class="main main-raised">
+		<div class="container">
+
+			<div class="section">
+				<div class="row">
+					{% for post in posts %}
+
+                        <div class="col-md-4">
+                            <div class="card card-plain card-blog">
+                                <div class="card-image">
+                                    <a href="/blog/{{ post.id }}">
+                                        <img class="img img-raised" src="{{ post.main_image.image.url }}">
+                                    </a>
+                                <div class="colored-shadow" style="background-image: url({{ post.main_image.image.url }}); opacity: 1;"></div></div>
+
+                                <div class="card-content">
+                                    <h6 class="category text-info">{{ post.date_created }}</h6>
+                                    <h4 class="card-title">
+                                        <a href="/blog/{{ post.id }}">{{ post.title }}</a>
+                                    </h4>
+                                    <p class="card-description">
+                                        {{ post.short_description }}<a href="/blog/{{ post.id }}">  Читать далее</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+				</div>
+			</div>
+		</div>
+    </div>
+
+{% endblock %}

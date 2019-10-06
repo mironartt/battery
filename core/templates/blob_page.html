@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+    <div class="page-header header-filter" data-parallax="true" style="background-image: url({{ post.main_image.image.url }}); max-height: 450px">
+        <div class="container">
+            <div class="row">
+                <div style="position:relative; bottom: 150px">
+                    <div class="col  col-xs-12">
+                        <h1 class="title" style="text-shadow:
+		-0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		 1px 1px 2px black,
+		  0 0 1em #58fffd;
+                ">{{ post.title }}</h1>
+                    </div>
+                    <div class="col  col-xs-12">
+                        <h4 style="text-shadow:
+		-0   -1px 0   #000000,
+		 0   -1px 0   #363636;
+                ">{{ post.short_description }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+
+
+    <div class="main main-raised">
+		<div class="container">
+            <div class="section section-text">
+                <div class="row">
+    				<div class="col-md-8 col-md-offset-2">
+        				{{ post.body|safe }}
+
+    				</div>
+				</div>
+			</div>
+
+
+
+
+
+        </div>
+    </div>
+
+{% endblock %}
