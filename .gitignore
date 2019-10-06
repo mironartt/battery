@@ -111,6 +111,4 @@ mysite_nginx.conf
 mysite_uwsgi.ini
 mysite.sock
 libattery.sock
-static/
-media/
 notes.txt
